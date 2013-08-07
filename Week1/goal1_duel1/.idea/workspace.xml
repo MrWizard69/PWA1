@@ -5,7 +5,7 @@
     <ignored path="goal1_duel1.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="8c326b21-314f-4958-bb9f-e5621a1d81bd" time="1375843005571" ignored="false" />
-    <file path="/main.js" changelist="8c326b21-314f-4958-bb9f-e5621a1d81bd" time="1375843236995" ignored="false" />
+    <file path="/main.js" changelist="8c326b21-314f-4958-bb9f-e5621a1d81bd" time="1375846272159" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="328" selection-end="328" vertical-scroll-proportion="-9.916667">
+            <state line="18" column="31" selection-start="328" selection-end="328" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="115" selection-end="115" vertical-scroll-proportion="0.1264045">
+            <state line="10" column="33" selection-start="200" selection-end="200" vertical-scroll-proportion="0.21067415">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -61,8 +61,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="763" />
-    <option name="y" value="42" />
+    <option name="x" value="73" />
+    <option name="y" value="22" />
     <option name="width" value="1420" />
     <option name="height" value="860" />
   </component>
@@ -153,7 +153,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="763" y="42" width="1420" height="860" extended-state="0" />
+    <frame x="73" y="22" width="1420" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -258,14 +258,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="328" selection-end="328" vertical-scroll-proportion="-9.916667">
+        <state line="18" column="31" selection-start="328" selection-end="328" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="115" selection-end="115" vertical-scroll-proportion="0.1264045">
+        <state line="10" column="33" selection-start="200" selection-end="200" vertical-scroll-proportion="0.21067415">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
