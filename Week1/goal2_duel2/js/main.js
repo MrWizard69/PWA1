@@ -27,34 +27,34 @@
         //code will go here
         //console.log("In the fight function");
 
-        alert(playerOneName + ":" + playerOneHealth + " ***START*** " + playerTwoName + ":" + playerTwoHealth);
+        alert(playerOne[0] + ":" + playerOne[2] + " ***START*** " + playerTwo[0] + ":" + playerTwo[2]);
 
         for(i = 0; i < 10; i++){
             //Random Formula - Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = player1Damage * .5;
-            var minDamage2 = player2Damage * .5;
+            var minDamage1 = playerOne[1] * .5;
+            var minDamage2 = playerTwo[1] * .5;
 
-            var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
-            var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
+            var f1 = Math.floor(Math.random() * (playerOne[1] - minDamage1) + minDamage1);
+            var f2 = Math.floor(Math.random() * (playerTwo[1] - minDamage2) + minDamage2);
 
             //console.log(f1);
             //console.log(f2);
 
             //Inflict Damage
-            playerOneHealth -= f1;
-            playerTwoHealth -= f2;
+            playerOne[2] -= f1;
+            playerTwo[2] -= f2;
 
             //console.log(playerOneHealth);
             //console.log(playerTwoHealth);
 
-            console.log(playerOneName + ":" + playerOneHealth + " " + playerTwoName + ":" + playerTwoHealth);
+            console.log(playerOne[0] + ":" + playerOne[2] + " " + playerTwo[0] + ":" + playerTwo[2]);
 
             var result = winnerCheck();
             console.log(result);
 
             if(result === "No Winner"){
                 round++;
-                alert(playerOneName + ":" + playerOneHealth + " ***Round " + round + " Over***" + playerTwoName + ":" + playerTwoHealth);
+                alert(playerOne[0] + ":" + playerOne[2] + " ***Round " + round + " Over***" + playerTwo[0] + ":" + playerTwo[2]);
             }
             else{
                 alert(result);
@@ -68,14 +68,14 @@
         //console.log("in winnerCheck FN");
         var results = "No Winner";
 
-        if(playerOneHealth < 1 && playerTwoHealth < 1){
+        if(playerOne[2] < 1 && playerTwo[2] < 1){
             results = "You Both Die!";
         }
-        else if(playerOneHealth < 1){
-            results = playerTwoName + " WINS!!!";
+        else if(playerOne[2] < 1){
+            results = playerTwo[0] + " WINS!!!";
         }
-        else if(playerTwoHealth < 1){
-            results = playerOneName + " WINS!!!";
+        else if(playerTwo[2] < 1){
+            results = playerOne[0] + " WINS!!!";
         }
         return results;
 
