@@ -96,9 +96,9 @@
 
         var vowelsInWord = function(wrd){
             for(i = 0, j = wrd.length; i < j; i++){
-                if(wrd[i] == "a" || wrd[i] == "e" || wrd[i] == 'i' || wrd[i] == 'o' || wrd[i] == 'u'){
+                if(wrd[i] == "a" || wrd[i] == "e" || wrd[i] == 'i' || wrd[i] == 'o' || wrd[i] == 'u'){  //and sometimes 'y'
                      vowelcnter++;
-                } //and sometimes 'y'
+                }
             }
 
             return vowelcnter;
@@ -110,9 +110,24 @@
     console.log("6. find number and create an array of even or odd numbers");
 
         var findNum = function(arr,bool){
-            for(i = 0, j = arr.length; i < j; i++){
+            var arra = [];
+            if(bool === undefined || bool){
+                for(i = 0, j = arr.length; i < j; i++){
+                    if(arr[i] % 2 === 0){
+                        arra.push(arr[i]);
+                    }
+                }
+
+            }else{
+                for(i = 0, j = arr.length; i < j; i++){
+                    if(arr[i] % 2 !== 0){
+                        arra.push(arr[i]);
+                    }
+                }
 
             }
+
+            return arra;
         }
 
     console.log(findNum([31,22,4,67,83,6,5,4]));
