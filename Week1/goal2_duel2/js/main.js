@@ -18,6 +18,9 @@
     var playerOneHealth = 100;
     var playerTwoHealth = 100;
 
+    var playerOne = ["VID", 20, 100];
+    var playerTwo = ["NEGA-VID", 20, 100];
+
     var round = 0;
 
     function fight(){
