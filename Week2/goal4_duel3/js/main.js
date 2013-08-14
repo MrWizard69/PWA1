@@ -65,7 +65,26 @@
             //console.log(f2);
 
             //Inflict Damage
+            fighters[0].health -= f1;
+            fighters[1].health -= f2;
 
+            ///Set HTML
+            document.querySelector('#kabal p').innerHTML = fighters[0].health; //the CONNECTOR to HTML class ='#' id = '.'
+            document.querySelector('#kratos p').innerHTML = fighters[1].health;
+            //console.log("player 1:" + playerOne[2]);
+            //console.log("player2:" + playerTwo[2]);
+
+            console.log(fighters[0].name + ":" + fighters[0].health + " " + fighters[1].name + ":" + fighters[1].health);
+
+            var result = winnerCheck();
+            console.log(result);
+
+            if(result === " No Winner"){
+                document.querySelector('#round_number').innerHTML = "Round: " + round++ + results;
+                //alert(fighters[0].name + ":" + fighters[0].health + " ***Round " + round + " Over***" + fighters[1].name + ":" + fighters[1].health);
+            }
+            else if(result = "VID Wins"){
+                //alert(result);
 
             }
         }
@@ -74,32 +93,7 @@
 
 
     function winnerCheck(){
-        //code will go here
-        //console.log("in winnerCheck FN");
-        results = " No Winner";
 
-        if(fighters[0].health < 1 && fighters[1].health < 1){
-            document.querySelector('#round_number').innerHTML = results = "You Both Die! SHEET! ='[";
-            fighters[0].health = 100;
-            fighters[1].health = 100;
-            round = 1;
-            button.innerHTML = "Restart?";
-        }
-        else if(fighters[0].health < 1){
-            document.querySelector('#round_number').innerHTML = results = fighters[1].name + " WINS!!! VICTORY! :D";
-            fighters[0].health = 100;
-            fighters[1].health = 100;
-            round = 1;
-            button.innerHTML = "Restart?";
-        }
-        else if(fighters[1].health < 1){
-            document.querySelector('#round_number').innerHTML = results = fighters[0].name + " WINS!!! VICTORY! :D";
-            fighters[0].health = 100;
-            fighters[1].health = 100;
-            round = 1;
-            button.innerHTML = "Restart?";
-        }
-        return results;
 
     }
 
