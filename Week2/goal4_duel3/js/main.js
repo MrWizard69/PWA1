@@ -32,6 +32,12 @@
          health: 100
      }];
 
+    var button = document.querySelector('.buttonblue');
+
+
+    var round = 1;
+    document.querySelector('#round_number').innerHTML = "Start Round: " + round + " FIGHT!!!";
+
 
 })();
 
