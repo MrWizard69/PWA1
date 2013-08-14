@@ -93,6 +93,31 @@
 
 
     function winnerCheck(){
+        //code will go here
+        //console.log("in winnerCheck FN");
+        results = " No Winner";
+
+        if(fighters[0].health < 1 && fighters[1].health < 1){
+            document.querySelector('#round_number').innerHTML = results = "You Both Die! SHEET! ='[";
+            fighters[0].health = 100;
+            fighters[1].health = 100;
+            round = 1;
+            button.innerHTML = "Restart?";
+        }
+        else if(fighters[0].health < 1){
+            document.querySelector('#round_number').innerHTML = results = fighters[1].name + " WINS!!! VICTORY! :D";
+            fighters[0].health = 100;
+            fighters[1].health = 100;
+            round = 1;
+            button.innerHTML = "Restart?";
+        }
+        else if(fighters[1].health < 1){
+            document.querySelector('#round_number').innerHTML = results = fighters[0].name + " WINS!!! VICTORY! :D";
+            fighters[0].health = 100;
+            fighters[1].health = 100;
+            round = 1;
+            button.innerHTML = "Restart?";
+        }
 
 
     }
