@@ -38,6 +38,15 @@
     var round = 1;
     document.querySelector('#round_number').innerHTML = "Start Round: " + round + " FIGHT!!!";
 
+    button.onclick = function(e){
+
+        fight();
+
+    };
+
+
+
+    function fight(){
 
 })();
 
