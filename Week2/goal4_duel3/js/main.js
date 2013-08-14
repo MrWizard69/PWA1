@@ -118,7 +118,7 @@
             round = 1;
             button.innerHTML = "Restart?";
         }
-
+        return results;
 
     }
 
